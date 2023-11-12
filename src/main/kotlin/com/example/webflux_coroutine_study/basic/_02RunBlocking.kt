@@ -11,7 +11,7 @@ private val log = KotlinLogging.logger { }
 
 @DelicateCoroutinesApi
 fun main() {
-    GlobalScope.launch {  // GlobalScope.launch는 메인스레드를 블로킹하지 않는다.
+    GlobalScope.launch { // GlobalScope.launch는 메인스레드를 블로킹하지 않는다.
         delay(1000L)
         log.info("World!")
     }
